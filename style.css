@@ -62,6 +62,17 @@ nav ul li:nth-child(4) {
     height: 1.3rem;
 }
 
+#menu {
+    display: none;
+    opacity: 0;
+}
+
+#navbar_items_mobile {
+    display: none;
+    opacity: 0;
+    position: absolute;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -70,7 +81,7 @@ main {
     height: 100vh;
     color: #ffffff;
     gap: 1rem;
-    background-image: url('images/showcase.webp');
+    background-image: url('/IMG/Spotify Clone/showcase.webp');
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
@@ -240,4 +251,207 @@ footer .main {
 
 .img_brazil {
     width: 2rem;
+}
+
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+@media screen and (max-width: 1080px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        min-width: 100%;
+        min-height: 6rem;
+    }
+
+    main h1 {
+        font-size: 64px
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    footer {
+        gap: 3rem;
+    }
+
+    footer .main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .images_items {
+        flex-direction: row;
+    }
+
+    .footer_items {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .footer_info_items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer_info_items li {
+        font-size: 12px;
+    }
+
+    .rights {
+        font-size: 12px
+    }
+}
+
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+@media screen and (max-width: 715px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(0, 0, 0, 0.6);
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100%;
+        height: 6rem;
+        position: fixed;
+        top: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li:nth-child(4) {
+        border: none
+    }
+
+    navbar_item {
+        transition: .4s all ease;
+    }
+
+    navbar_item:hover {
+        color: #1db954;
+        cursor: pointer;
+        transform: scale(95%);
+        transition: .4s all ease-in-out;
+    }
+
+    #menu {
+        display: block;
+        opacity: 1;
+        padding: 1rem;
+        color: #ffffff;
+    }
+
+    #menu:hover+#navbar_items_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 30rem;
+        padding: 1rem;
+        width: 100%;
+        border-radius: 0 0 1rem 1rem;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 1rem;
+        opacity: 1;
+    }
+
+    main {
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    main h1 {
+        font-size: 32px;
+        text-align: center;
+
+    }
+
+    main p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    main button {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 3rem;
+        gap: 3rem;
+    }
+
+    footer .main {
+        width: 100%;
+    }
+
+
+    .images_items {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer_section {
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .footer_items {
+        gap: 1rem;
+    }
+
+    .social {
+        gap: 1rem;
+    }
+
+    .social i {
+        font-size: 16px;
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 1.5rem;
+    }
+
+    .footer_info_items li {
+        font-size: 10px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .rights {
+        font-size: 12px
+    }
 }
