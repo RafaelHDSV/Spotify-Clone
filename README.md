@@ -1,6 +1,6 @@
-# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+# Spotify Clone
 
-AAAAAAAAAAAAA
+Project made to be a Spotify Clone, using a specific Spotify website as a base and copying it down to the last details
 
 ## Table of contents
 
@@ -17,8 +17,9 @@ AAAAAAAAAAAAA
 
 Users should be able to:
 
-- AAAAAAAAAAAAAAAAAze
-- AAAAAAAAAAAAAAA
+- See the entire Spotify Original layout
+- Can be viewed on different types of screens
+- Click buttons and links and receive a click confirmation
 
 ### Screenshot
 
